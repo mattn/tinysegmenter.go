@@ -3,7 +3,7 @@ package main
 import (
 	"syscall/js"
 
-	"github.com/ikawaha/tinysegmenter.go"
+	"github.com/mattn/tinysegmenter.go"
 )
 
 const exportSegmentFuncName = "waSegment"

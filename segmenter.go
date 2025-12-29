@@ -1,7 +1,7 @@
 package tinysegmenter
 
 import (
-	"github.com/ikawaha/tinysegmenter.go/internal"
+	"github.com/mattn/tinysegmenter.go/internal"
 )
 
 func Segment(s string) []string {

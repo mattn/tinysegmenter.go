@@ -1,3 +1,3 @@
-module github.com/ikawaha/tinysegmenter.go
+module github.com/mattn/tinysegmenter.go
 
 go 1.16
