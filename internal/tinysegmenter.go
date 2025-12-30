@@ -168,12 +168,10 @@ func Segment(input string) []string {
 		score += TQ2[quad{p2, c2, c3, c4}]
 		score += TQ3[quad{p3, c1, c2, c3}]
 		score += TQ4[quad{p3, c2, c3, c4}]
+		score += NN[pair{c3, c4}]
 
 		p := 'O'
-		// Don't break between consecutive numbers (or consecutive alphabet)
-		if (c3 == 'N' && c4 == 'N') || (c3 == 'A' && c4 == 'A') {
-			// Keep consecutive numbers/alphabets together
-		} else if score > 0 {
+		if score > 0 {
 			ret = append(ret, input[wordstart:pos1])
 			wordstart = pos1
 			p = 'B'
